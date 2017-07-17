@@ -1,0 +1,22 @@
+//import theme components
+@import "components/hs-navbar";
+@import "components/carousel";
+@import "components/hs-hero";
+@import "components/hs-card";
+@import "components/hs-flag";
+@import "components/hs-media";
+@import "components/hs-button";
+@import "components/hs-contact";
+@import "hs-post";
+@import "components/hs-sidebar";
+
+//site wide global variables
+
+p {
+	margin-bottom:1.5rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-align:center;
+	margin-bottom:2rem;
+}
