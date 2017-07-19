@@ -7,7 +7,6 @@
 @import "components/hs-media";
 @import "components/hs-button";
 @import "components/hs-contact";
-@import "hs-post";
 @import "components/hs-sidebar";
 
 //site wide global variables
@@ -19,4 +18,9 @@ p {
 h1,h2,h3,h4,h5,h6 {
 	text-align:center;
 	margin-bottom:2rem;
+}
+
+// page wide elements
+.hs-icon-top {
+	width:100px;
 }

@@ -179,7 +179,7 @@ gulp.task('sass', function () {
 // Starts watcher. Watcher runs gulp sass task on changes
 gulp.task('watch', function () {
     gulp.watch('./sass/**/*.scss', ['sass']);
-    gulp.watch([basePaths.dev + 'js/**/*.js','js/**/*.js','!js/child-theme.js','!js/child-theme.min.js'], ['scripts']);
+    gulp.watch([basePaths.dev + 'js/**/*.js'], ['scripts']);
 });
 
 // Run:
@@ -254,14 +254,14 @@ gulp.task('scripts', function() {
         basePaths.dev + 'js/skip-link-focus-fix.js'
     ];
   gulp.src(scripts)
-    .pipe(concat('child-theme.min.js'))
+    .pipe(concat('theme.min.js'))
     .pipe(uglify().on('error', function(e){
             console.log(e);
          }))
     .pipe(gulp.dest('./js/'));
 
   gulp.src(scripts)
-    .pipe(concat('child-theme.js'))
+    .pipe(concat('theme.js'))
     .pipe(gulp.dest('./js/'));
 });
 
