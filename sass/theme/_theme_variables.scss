@@ -112,14 +112,6 @@ $pink:   #ff5b77;
 $purple: #613d7c;
 $aliceblue:#f0f8ff;
 
-$cs-green:#16a78f;
-$cs-green-light:#2fb59f;
-$cs-blue: #130c1a;
-$cs-orange: #f3bd6c;
-$cs-purple: #d46496;
-$cs-red: #e5735e;
-$cs-cartoon-green: #19a58f;
-
 // Create grayscale
 $gray-dark:                 #292b2c;
 $gray:                      #464a4c;
@@ -128,7 +120,7 @@ $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $cs-green;
+$brand-primary:             $gray;
 $brand-success:             $green;
 $brand-info:                $teal;
 $brand-warning:             $orange;
@@ -213,7 +205,7 @@ $inverse-color: $gray-lighter;
 //
 // Style anchor elements.
 
-$link-color:            $cs-green;
+$link-color:            $brand-primary;
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 15%);
 $link-hover-decoration: underline;
@@ -607,11 +599,11 @@ $dropdown-margin-top:            0;
 $dropdown-bg:                    $white;
 $dropdown-border-color:          rgba($black,.15);
 $dropdown-border-width:          $border-width;
-$dropdown-divider-bg:            $cs-green;
+$dropdown-divider-bg:            $brand-primary;
 $dropdown-box-shadow:            0 .5rem 1rem rgba($black,.175);
 
-$dropdown-link-color:            $cs-green;
-$dropdown-link-hover-color:      darken($cs-green, 5%);
+$dropdown-link-color:            $brand-primary;
+$dropdown-link-hover-color:      darken($brand-primary, 5%);
 $dropdown-link-hover-bg:         $gray-lightest;
 
 $dropdown-link-active-color:     $component-active-color;
@@ -660,13 +652,13 @@ $navbar-inverse-disabled-color:        rgba($white,.25);
 $navbar-inverse-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-inverse-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23");
 $navbar-inverse-toggler-border:        rgba($white,.1);
 
-$navbar-light-color:                $cs-green;
+$navbar-light-color:                $brand-primary;
 $navbar-light-toggler-color:        $white;
-$navbar-light-hover-color:          rgba($cs-green,.7);
-$navbar-light-active-color:         rgba($cs-green,.9);
-$navbar-light-disabled-color:       rgba($cs-green,.3);
+$navbar-light-hover-color:          rgba($brand-primary,.7);
+$navbar-light-active-color:         rgba($brand-primary,.9);
+$navbar-light-disabled-color:       rgba($brand-primary,.3);
 $navbar-light-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-toggler-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23");
-$navbar-light-toggler-border:       rgba($cs-green,.3);
+$navbar-light-toggler-border:       rgba($brand-primary,.3);
 
 // Navs
 
@@ -722,7 +714,7 @@ $pagination-disabled-border:           #ddd;
 // Jumbotron
 
 $jumbotron-padding:              2rem;
-$jumbotron-bg:                   $purple;
+$jumbotron-bg:                   $white;
 
 
 // Form states and alerts

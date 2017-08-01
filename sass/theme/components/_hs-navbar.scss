@@ -1,5 +1,5 @@
 .hs-navbar-toggler--green {
-    background: $cs-green;
+    background: $brand-primary;
 }
 
 .navbar-nav, .dropdown-menu {
@@ -16,11 +16,11 @@
         }
     }
     .hs-navbar-nav {
-        background-color: $cs-green;
+        background-color: $brand-primary;
         @include border-radius();
     }
     .dropdown-menu {
-        background: $cs-green-light;
+        background: lighten($brand-primary,15%);
     }
     .dropdown-menu .menu-item a.nav-link {
         padding-left: $spacer-lg;
@@ -52,9 +52,9 @@
         background-color: $white;
     }
     .navbar-light .navbar-nav .nav-link {
-        color: $cs-green;
+        color: $brand-primary;
         &:hover {
-            color: rgba($cs-green, .7);
+            color: rgba($brand-primary, .7);
         }
     }
     .dropdown-menu {
@@ -70,11 +70,11 @@
         padding: $spacer-sm $spacer;
     }
     .dropdown-menu .menu-item a.nav-link:hover {
-        background: $cs-green;
+        background: $brand-primary;
         color: $white;
     }
     .navbar-light .navbar-nav .active>.nav-link {
-        color:$cs-green;
+        color:$brand-primary;
     }
 }
 
@@ -82,7 +82,7 @@
 //NAVBAR FOOTER STYLES
 
 .hs-navbar-footer__menu, .hs-footer-wrapper {
-    background: $cs-blue;
+    background: $blue;
     }
 
 @include media-breakpoint-up(xs) {

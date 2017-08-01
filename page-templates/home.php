@@ -9,7 +9,8 @@ Template Post Type: post, page, event
 
 
 <?php
-  $hs_class="text-center";
+  $hs_class="text-center hs-hero--para";
+  $hs_img="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1443527216320-7e744084f5a7-1.jpg";
   $hs_heading="Hexagon Sun template";
   $hs_content="Insert content here";
 
